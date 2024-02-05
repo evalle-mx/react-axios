@@ -11,6 +11,7 @@ function App() {
   useEffect( () => {
     axios.get(API)  // axios.get('http://localhost:3030/users')
     .then((res) => {
+      console.log(res);
       setColums(Object.keys(res.data[0]))
       setRecords(res.data)
     }).catch((err) => {

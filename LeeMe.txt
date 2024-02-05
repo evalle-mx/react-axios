@@ -18,3 +18,16 @@ https://www.npmjs.com/package/json-server
 $ npm install json-server
 
 $ npx json-server db.json --port 3030
+
+
+
+
+
+
+#######################
+#   React Data Table Component Tutorial 
+#  https://www.youtube.com/watch?v=3oHUtG0cjfY
+
+$ npm i react-data-table-component
+
+> http://localhost:3000/table
