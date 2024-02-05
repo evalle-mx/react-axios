@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { API } from './props/constant'
 
 function Add() {
     const [inputData, setInputData] = useState( {name:'', email:''} )
@@ -9,7 +10,7 @@ function Add() {
 
     function handleSubmit(event){
         event.preventDefault();
-        axios.post('http://localhost:3030/users', inputData)
+        axios.post(API, inputData)  // axios.post('http://localhost:3030/users', inputData)
         .then((res) => {
             alert('Data Added Successfully!!');
             navigate('/');

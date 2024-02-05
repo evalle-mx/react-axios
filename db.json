@@ -28,13 +28,8 @@
       "email": "di@mail.com"
     },
     {
-      "id": "2",
-      "name": "Dianiux",
-      "email": "ladyDy@mail.com"
-    },
-    {
       "id": "3",
-      "name": "Violeta",
+      "name": "Violeta La poeta",
       "email": "vi@mail.com"
     },
     {
@@ -51,11 +46,6 @@
       "id": "7",
       "name": "Alexandro",
       "email": "ali@mail.com"
-    },
-    {
-      "id": 28,
-      "name": "Test",
-      "email": "testmail@mail.com"
     }
   ],
   "posts": [

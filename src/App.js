@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom"; 
+import { API } from './props/constant'
 
 function App() {
   const [columns, setColums] = useState([])
@@ -8,7 +9,7 @@ function App() {
   const navigate = useNavigate();
 
   useEffect( () => {
-    axios.get('http://localhost:3030/users')
+    axios.get(API)  // axios.get('http://localhost:3030/users')
     .then((res) => {
       setColums(Object.keys(res.data[0]))
       setRecords(res.data)
@@ -50,7 +51,7 @@ function App() {
   function handleSubmit(id){
     const confDel = window.confirm("Do you want to delete??");
     if(confDel){
-      axios.delete('http://localhost:3030/users/'+id)
+      axios.delete(API+id)  // axios.delete('http://localhost:3030/users/'+id)
       .then((res) => {
         alert('record Deleted');
         navigate('/');

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from "react-router-dom"; 
+import {API} from './props/constant'
 
 function Edit() {
     const {id} = useParams();  
@@ -10,7 +11,7 @@ function Edit() {
     const [data, setData] = useState( [] )
     
     useEffect( () => {
-        axios.get('http://localhost:3030/users/'+id)
+        axios.get(API+id)  // axios.get('http://localhost:3030/users/'+id)
         .then((res) => {
             setData(res.data)
         })
@@ -21,7 +22,7 @@ function Edit() {
 
     function handleSubmit(event){
         event.preventDefault();
-        axios.put('http://localhost:3030/users/'+id, data)
+        axios.put(API+id, data)  // axios.put('http://localhost:3030/users/'+id, data)
         .then((res) => {
             alert('Data Updated successfully! ');
             navigate('/');
