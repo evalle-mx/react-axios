@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "headphones",
+      "price": 3.99
+    },
+    {
+      "id": "2",
+      "name": "Mouse",
+      "price": 2.99
+    },
+    {
+      "id": "19",
+      "name": "Keyboard",
+      "price": 7.99
+    },
+    {
+      "id": "28",
+      "name": "Monitor",
+      "price": 4.99
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Dianita",
+      "email": "di@mail.com"
+    },
+    {
+      "id": "2",
+      "name": "Dianiux",
+      "email": "ladyDy@mail.com"
+    },
+    {
+      "id": "3",
+      "name": "Violeta",
+      "email": "vi@mail.com"
+    },
+    {
+      "id": "4",
+      "name": "Poeta",
+      "email": "poe@mail.com"
+    },
+    {
+      "id": "5",
+      "name": "Zetzengary",
+      "email": "zets@mail.com"
+    },
+    {
+      "id": "7",
+      "name": "Alexandro",
+      "email": "ali@mail.com"
+    },
+    {
+      "id": 28,
+      "name": "Test",
+      "email": "testmail@mail.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
